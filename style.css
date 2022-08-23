@@ -26,16 +26,7 @@ body {
 _____________________ */
 
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    padding: 35px 0;
-    transition: .5s;
-    background: black;
-}
+
 
 .header1 {
     position: absolute;
@@ -51,7 +42,6 @@ _____________________ */
     
     
 }
-
 
 .header_inner {
     display: flex;
@@ -69,6 +59,10 @@ _____________________ */
     align-items: center;
     padding-bottom: 35px;
     
+}
+
+.header_logo {
+    padding-top: 25px;
 }
 
 .nav {
@@ -89,7 +83,7 @@ li {
 
 .nav_link {
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
     padding-top: 30px;
     text-decoration: none;
@@ -128,7 +122,7 @@ _____________________ */
 .intro {
     width: 100%;
     height: 1100px;
-    background: url('intro-bg (4).jpg')  no-repeat center;
+    background: url('intro_9.jpg')  no-repeat left;
     background-size: cover;
 }
 
@@ -146,7 +140,7 @@ _____________________ */
     width: 50%;
     text-align: left;
     color: #fff;
-    font-family: 'Cinzel Decorative', cursive;
+    
     font-size: 70px;
     font-weight: 700px;
     text-transform: uppercase;
@@ -159,7 +153,7 @@ _____________________ */
     
     vertical-align: top;
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: px;
     border: 5px solid white;
     border-radius: 2px;
     font-family: ;
@@ -197,7 +191,7 @@ _____________________ */
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 35px;
-    font-family: 'Cinzel Decorative', cursive;
+    
     border-bottom: 2px solid #333;
     
 }
@@ -206,7 +200,7 @@ _____________________ */
     color: black;
     text-align: center;
     font-size: 45px;
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cardo' , sans-serif;
     padding-top: 50px;
     
 }
@@ -219,12 +213,33 @@ _____________________ */
      background: #fff;
 }
 
+.benefit_btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 7px 17px;
+    background: transparent;
+    border: 2px solid #333;
+    border-radius: 2px;
+    font-family: ;
+    color: #333;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.benefit_btn:hover {
+    background: #333;
+    color: #fff;
+}
+
 .benefits_title {
     text-align: center;
     padding: 60px 0;
     color: #272D2D;
     font-size: 35px;
-    font-family: 'Cinzel Decorative';
+    
     border-bottom: 2px solid #333;
     
 }
@@ -322,7 +337,7 @@ _____________________ */
     color: #333;
     font-size: 50px;
     padding: 50px 0;
-    font-family: 'Cinzel Decorative', cursive;
+    
     text-transform: uppercase;
     border-bottom: 2px solid #333;
 }
@@ -389,7 +404,15 @@ _____________________ */
 /* MEDIA 
 -----------------*/
 
+@media(min-width:769px ){
+    .logo_1 {
+        display: none;
+    }
+}
+
 @media and (max-width: 2560px){
+    
+    
     .container3 {
         max-width: 1100px;
         margin: 0 auto;
@@ -418,6 +441,11 @@ _____________________ */
 }
 
 @media(max-width: 768px){
+    
+    .logo_2 {
+        display: none;
+    }
+    
     .container {
         max-width: 600px;
     }
@@ -429,8 +457,9 @@ _____________________ */
     
     .header_logo {
         font-size: 35px;
-        padding-top: 5;
+        padding-top: 0;
     }
+    
     
     .header {
         
@@ -495,7 +524,7 @@ _____________________ */
     
     .intro_title {
         font-size: 65px;
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
     
@@ -528,11 +557,19 @@ _____________________ */
 
 
 @media(max-width: 435px){
-
+    
+    
     .container {
         max-width: 350px;
     }
     
+    .intro {
+        background: url('intro_12.jpg')  no-repeat center;
+    }
+    
+    .intro_inner {
+        padding-top: 250px;
+    }
     
     .intro_title {
         font-size: 45px;
@@ -541,7 +578,7 @@ _____________________ */
     
     .btn {
         position: absolute;
-        left: 30%;
+        left: 5%;
         font-size: 15px;
         border: 3px solid white;
         margin-left: 0px;
